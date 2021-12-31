@@ -13,4 +13,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: year=$(date | awk '{print $NF}') && echo 'Happy new year! '$year
+      - name: Run greeting
+        run: year=$(date | awk '{print $NF}') && echo 'Happy new year! '$year
