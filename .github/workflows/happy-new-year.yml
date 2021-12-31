@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  mirror:
+  greeting:
     runs-on: ubuntu-latest
 
     steps:
