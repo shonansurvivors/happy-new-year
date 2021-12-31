@@ -5,8 +5,11 @@ on:
     - cron: '0 15 31 12 *' # JST
   workflow_dispatch:
 
+env:
+  TZ: Asia/Tokyo
+
 jobs:
-  mirror:
+  greeting:
     runs-on: ubuntu-latest
 
     steps:
